@@ -1,0 +1,15 @@
+The video titled "Optimize with Custom Data | 5-Minute Materials [UE4/UE5]" by PrismaticaDev discusses the use of Custom Data or Custom Primitive Data in Unreal Engine for creating variation in assets and optimizing scenes. Here's a summary:
+
+Custom Data: The video explains how to use custom data in Unreal Engine to create variation in assets without having to create multiple material instances. This is done by creating a custom primitive data parameter in the material and assigning different values to it for different instances of the asset.
+
+Optimization: The use of custom data can significantly reduce the number of draw calls, which can be a performance bottleneck. By using the same material instance with different custom data values for multiple instances of an asset, they can be batched together and sent to the GPU as one draw call, a process known as dynamic instancing.
+
+Variation: Custom data can be used to create variation in assets. For example, in a busy market scene, each stall can have a different color without needing to create a separate material for each one.
+
+Performance: The video demonstrates the impact of dynamic instancing on performance by showing the difference in draw calls with and without it. Even when custom data values are changed to create variation, the number of draw calls remains low due to dynamic instancing.
+
+Time Saving: Using custom data saves time as it eliminates the need to create and manage multiple material instances. It also allows for easy changes at runtime without incurring extra draw calls or the cost of creating dynamic material instances on the fly.
+
+Further Uses: Beyond color variation, custom data can be used to drive effect parameters or even change textures if a texture atlas is used. This allows for a high degree of flexibility and control over asset appearance while maintaining performance.
+
+The video concludes by encouraging viewers to explore the documentation for more in-depth information about custom primitive data and its capabilities in Unreal Engine.
