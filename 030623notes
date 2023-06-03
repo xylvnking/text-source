@@ -1,15 +1,296 @@
-The video titled "Optimize with Custom Data | 5-Minute Materials [UE4/UE5]" by PrismaticaDev discusses the use of Custom Data or Custom Primitive Data in Unreal Engine for creating variation in assets and optimizing scenes. Here's a summary:
+Trees
 
-Custom Data: The video explains how to use custom data in Unreal Engine to create variation in assets without having to create multiple material instances. This is done by creating a custom primitive data parameter in the material and assigning different values to it for different instances of the asset.
+Rocks
 
-Optimization: The use of custom data can significantly reduce the number of draw calls, which can be a performance bottleneck. By using the same material instance with different custom data values for multiple instances of an asset, they can be batched together and sent to the GPU as one draw call, a process known as dynamic instancing.
+Foliage
 
-Variation: Custom data can be used to create variation in assets. For example, in a busy market scene, each stall can have a different color without needing to create a separate material for each one.
+Truck
 
-Performance: The video demonstrates the impact of dynamic instancing on performance by showing the difference in draw calls with and without it. Even when custom data values are changed to create variation, the number of draw calls remains low due to dynamic instancing.
+Barricade
 
-Time Saving: Using custom data saves time as it eliminates the need to create and manage multiple material instances. It also allows for easy changes at runtime without incurring extra draw calls or the cost of creating dynamic material instances on the fly.
+1. **Road Surface**: Depending on the type of road, this could just be a dirt track, a gravel road, or even tarmac if it's a more established route.
 
-Further Uses: Beyond color variation, custom data can be used to drive effect parameters or even change textures if a texture atlas is used. This allows for a high degree of flexibility and control over asset appearance while maintaining performance.
+1. **Signage**: There might be signs indicating the direction to the nearest town, warnings about the road conditions, or distance markers.
 
-The video concludes by encouraging viewers to explore the documentation for more in-depth information about custom primitive data and its capabilities in Unreal Engine.
+1. **Guardrail or Fencing**: If the road is near a cliff or steep slope, there might be some form of barrier along the edge of the road.
+2. **Vehicle Debris**: If the thieves caused the truck to crash, there might be debris on the road such as broken glass, vehicle parts, or spilled cargo.
+3. **Thieves' Equipment**: Depending on how the thieves are conducting the hijack, there might be equipment like ropes, grappling hooks, or tools.
+4. **Camping Equipment**: If the thieves have been lying in wait for a while, there might be evidence of a temporary camp nearby, like a fire pit, food wrappers, or discarded cans/bottles.
+5. **Wildlife**: Small details like birds in the trees, a squirrel, or even insects can add a touch of realism and movement to the scene.
+6. **Weather Elements**: Depending on the time and weather, you might want to include elements like puddles, fallen leaves, or patches of snow.
+7. **Tire Tracks**: There might be tire tracks on the road, either from the truck or from the thieves' vehicles.
+8. **Personal Items**: If the truck was forcefully stopped, personal items from inside the truck may have been scattered on the road - a lunchbox, a map, a thermos, etc.
+9. **Footprints**: Depending on the weather, footprints could be a detail that adds a bit more realism to the scene.
+
+holographic map of city
+
+show the vehicles that were used by the thieves which we would see in stage 1 also
+
+1. **Pallets and Cargo**: Warehouses usually have pallets and other materials used for shipping and storage, which can add authenticity to the scene.
+
+1. **Graffiti and Posters**: These could be used to show the presence of the thieves group. For example, they might have marked their territory with their logo or other identifiers.
+2. **Lighting Fixtures**: Old, perhaps partly broken lighting fixtures can add a lot to the mood of the scene.
+3. **Electrical Equipment**: Boxes, conduits, and wiring, perhaps in a state of disrepair, could enhance the sense of the warehouse being abandoned.
+4. **Furniture**: Depending on how the thieves use the space, there might be makeshift furniture, like crates used as tables or old chairs.
+5. **Personal Items**: To humanize the thieves and add depth to the narrative, consider including some personal items. For example, a thief might have a picture of their family tucked away in their workspace.
+6. **Security**: The thieves would likely have some security measures in place. This could range from simple locks to more advanced equipment like CCTV cameras (whether they are functional or not is another layer of detail you could add).
+7. **Environment Debris**: Dust, cobwebs, leaves, or trash could be scattered around to make the warehouse feel deserted and forgotten.
+8. **Evidence of the Plan**: Besides the blueprints, you could include other signs of planning like maps, notes, or even a timeline.
+9. **Food and Drinks**: There might be signs of the thieves living or spending significant time here, like food wrappers or coffee cups.
+10. **Hideout Building**: This includes walls, floors, ceilings, doors, windows, and any distinctive architectural elements.
+11. **Planning Table**: A table, chairs, map, markers, notes, blueprints, and any other planning artifacts.
+12. **Truck**: The truck itself (which is a hero asset), tools for rigging, explosives, wiring, etc.
+13. **Weaponry**: Various weapons, ammunition, and any storage or display racks for them.
+14. **Living Quarters**: Beds or sleeping bags, personal items (like clothes, photographs, mementos), food, drinks, cooking utensils, etc.
+15. **Graffiti and Wall Textures**: Different graffiti designs, paint cans, brushes, or other tools used for making graffiti.
+16. **Environment Debris**: Rubbish, dust, cobwebs, leaves, broken glass, old newspapers, etc.
+17. **Lighting Fixtures**: Lamps, overhead lights, flashlights, or other sources of artificial lighting.
+18. **Workshop Tools**: Workbench, toolbox, various hand tools, machine tools, etc.
+19. **Security Measures**: Security cameras, locks, trip wires, alarm systems, etc.
+20. **Historical Elements**: Old graffiti, signs of previous occupants, decayed elements, etc.
+21. **Contrasting Elements**: High-tech equipment (like laptops, digital devices), vibrant paint for graffiti, etc.
+22. **Food and Supplies**: Packaged food, water bottles, ammunition boxes, medical supplies, etc.
+23. **Furniture and Fixtures**: Old, worn-out furniture like chairs, shelves, lockers, etc.
+24. **Personal Items**: Various personal items that tell the backstory of each thief. This could be anything from a worn-out book to a cherished locket.
+
+1. **Scaffolding**: Can be found around construction sites or damaged buildings that are under repair.
+2. **Construction Barriers**: These can be used to indicate areas under construction or off-limits areas.
+3. **Construction Equipment**: Items like cranes, bulldozers, and cement mixers could add authenticity to your scenes.
+4. **Construction Materials**: Piles of bricks, cement bags, wooden planks, and steel rods can be scattered around the construction site.
+5. **Portable Toilets**: Often found near construction sites.
+6. **Traffic Cones and Road Signs**: These can be used to direct traffic around the construction or disaster area.
+7. **Dumpsters**: Can be used both as a construction asset and a debris container post-disaster.
+8. **Power Tools**: Scattered power tools can add to the detail and believability of the construction site.
+9. **Safety Equipment**: Helmets, safety vests, and gloves can help convey the presence of construction workers.
+10. **Blueprints or Plans**: Could be found in a construction trailer or scattered in the wind post-explosion.
+11. **Construction Equipment**: Cranes, bulldozers, cement mixers, forklifts, excavators, scaffolding, etc.
+12. **Construction Materials**: Bricks, concrete blocks, steel beams, wood planks, sandbags, cement bags, etc.
+13. **Portable Buildings/Trailers**: These often serve as temporary offices or storage on construction sites.
+14. **Safety Barriers**: These could be plastic or metal barriers, traffic cones, caution tape, etc.
+15. **Signage**: Signs indicating construction work, detours, warnings, etc.
+16. **Tools**: Hammers, wrenches, power drills, saws, etc.
+17. **Safety Gear**: Helmets, safety vests, gloves, safety glasses, etc.
+18. **Portable Toilets**: Often found at construction sites.
+19. **Waste Containers**: Dumpsters or skips for construction waste.
+20. **Utility Items**: Ladders, wheelbarrows, water coolers, etc.
+21. **Blueprints and Construction Plans**: Could be found in an office trailer or held by a construction worker.
+22. **Construction Workers**: Models of workers in various poses could add life to your scenes.
+
+- **Building Exteriors**:
+    1. **Skyscrapers**: Iconic to urban areas, these structures would be primarily composed of glass and steel.
+    2. **Billboards and Advertisements**: Billboards on the sides of buildings, digital advertisement boards, and street-level ads.
+    3. **Subway Entrances**: Iconic elements in large cities, including staircases leading down to subway stations and signage.
+    4. **Fire Hydrants**: Typically found at regular intervals along city streets.
+    5. **Mailboxes**: Both public mailboxes and residential ones (in case of apartment buildings).
+    6. **Bike Racks**: Often found on sidewalks in busy urban areas.
+    7. **Scaffolding**: Often seen around buildings under construction or renovation.
+    8. **Traffic Signs and Signals**: Stop signs, one-way signs, pedestrian crossing signs, traffic lights, etc.
+    9. **Newspaper Vending Machines**: Small machines often found on the sidewalks.
+    10. **Bus Stops**: Includes benches, covered shelters, and signage.
+    11. **Parking Meters**: Found along the curb in areas with street parking.
+    12. **City Benches and Trash Cans**: Found at regular intervals along city streets and in parks.
+    13. **Street Food Vendors**: Stalls or carts selling food and drinks, often found near busy intersections and parks.
+    14. **Statues and Public Art**: Often found in parks or public squares.
+    15. **Fountains**: Could be standalone or incorporated into a park or square.
+    16. **Payphones**: Despite being less common now, they can still be found occasionally.
+    17. **Utility Poles and Wires**: Common in many urban areas.
+    18. **Manholes and Grates**: Found on the streets and sidewalks.
+    19. **Tree Grates**: Metal grates found around the base of trees planted in the sidewalk.
+    20. **Bollards**: Short posts used to create a protective or architectural perimeter.
+    21. **Building Architectural Elements**: Details like decorative cornices, friezes, or reliefs on building facades. Different architectural styles will have different elements.
+    22. **Balconies**: Various styles of balconies, some with plants or furniture.
+    23. **Ventilation ducts**: Found on the sides of buildings, sometimes with graffiti.
+    24. **Window Air Conditioning Units**: Often seen in older buildings.
+    25. **Rooftop Elements**: Water towers, satellite dishes, antennas, HVAC units, rooftop gardens or patios.
+    26. **Street Art and Graffiti**: Common in urban areas, especially on lower levels of buildings, back alleys, or construction barriers.
+    27. **Parking Lots**: Includes elements like cars, parking lines, parking payment stations, and signage.
+    28. **Bike Lanes**: Designated lanes for bicycles, often marked with specific signs and symbols.
+    29. **Construction Sites**: Cranes, construction fencing, tools, and machinery.
+    30. **Outdoor Dining Areas**: Tables, chairs, umbrellas, heat lamps, etc.
+    31. **Newsstands**: Small booths or carts selling newspapers and magazines.
+    32. **Security Cameras**: Commonly found on street corners, building entrances, and public spaces.
+    33. **Public Toilets**: Standalone units often found in larger parks or squares.
+    34. **Street Performers**: Could be represented by an unoccupied space with a hat or instrument case for donations.
+    35. **Sidewalk Markings**: Utility markings, painted symbols or directions for pedestrians and cyclists, etc.
+    36. **Storefronts**: Glass windows displaying products, signage, entrances.
+    37. **ATMs**: Standalone units or built into the wall of a bank or other buildings.
+    38. **Cobblestone Areas**: Some older streets or districts might have cobblestone instead of asphalt or concrete.
+    39. **Road Markings**: Crosswalks, stop lines, directional arrows, bus lanes, etc.
+    40. **Street Vendors**: Flower stalls, book stands, souvenir kiosks, etc.
+- **Street Elements**:
+    - The road itself, sidewalks, street lamps, traffic lights, benches, trash cans, etc.
+    - Damaged road surface
+    - Street furniture (benches, street lamps, trash cans) in varying states of damage
+    1. **Asphalt Texture**: Different conditions of the road, from fresh and smooth asphalt to worn-out or patched.
+    2. **Street Markings**: Various lane markings, pedestrian crosswalks, bike lanes, parking spots, etc.
+    3. **Sidewalks**: Different materials (concrete, brick, cobblestone), conditions, and widths. Don't forget about curb cuts for accessibility.
+    4. **Street Furniture**: Benches, trash cans, recycling bins, bike racks, mailboxes, etc.
+    5. **Street Lighting**: Different types of street lamps, traffic lights, and pedestrian crosswalk signals.
+    6. **Planters and Trees**: Urban greenery, which could include small grassy areas, trees, or flowerbeds.
+    7. **Bus Stops**: Includes shelters, seating, signage, and possibly a bus.
+    8. **Fire Hydrants**: Different styles depending on the city.
+    9. **Parking Meters**: Varying designs, from older coin-operated meters to modern digital ones.
+    10. **Bollards**: Short posts used to create a protective or architectural perimeter.
+    11. **Bike Lanes and Bicycle Parking**: Designated areas for bicycling and parking bicycles.
+    12. **Utility Covers**: Sewer, gas, water, and electrical covers on the street.
+    13. **Road Signs**: Stop signs, yield signs, speed limit signs, street name signs, etc.
+    14. **Billboards and Advertising**: Both standalone billboards and ads on bus stops or benches.
+    15. **Construction Barriers**: Barriers, cones, and signs for construction or road work.
+    16. **Public Art**: Statues, murals, or other forms of public art common in urban environments.
+    17. **Newspaper Boxes**: Small boxes for local or national newspapers.
+    18. **Food Trucks or Carts**: Could be parked on the side of the street.
+    19. **Manholes**: Different designs depending on their function (sewer, water, etc.)
+    20. **Subway or Train Station Entrances**: Stairs or elevators leading underground.
+    21. **Zebra Crossing and Traffic Lights**: For pedestrian safety.
+    22. **Potholes and Road Damage**: For added realism.
+    23. **Emergency Call Boxes**: Found in some cities for public safety.
+    24. **Drinking Fountains**: Public water fountains, which can be seen in parks or public squares.
+    25. **Public Toilets**: Often found in larger parks or near busy public areas.
+    26. **Payphones**: Though less common now, you can still find payphone booths in many cities.
+    27. **Information Boards/Maps**: Tourist information boards or city maps, usually found in central areas or near tourist attractions.
+    28. **Electric Scooter and Bike Rental Stations**: Increasingly common in many cities, these could include a variety of bicycles and scooters.
+    29. **Outdoor Dining Areas**: Tables, chairs, umbrellas, and barriers for outdoor dining, particularly relevant for post-pandemic urban settings.
+    30. **Parking Lots**: Cars, parking lines, payment stations, entrances/exits, signage.
+    31. **Public Transportation**: Bus, tram, and subway lines, including overhead power lines for trams.
+    32. **Train Tracks**: If a train line runs through your city, don't forget the tracks and possibly a train.
+    33. **Temporary Street Market Stalls**: For periodic farmer's markets or other public events.
+    34. **Christmas Lights and Decorations**: If the scene is set during the holiday season.
+    35. **Snow or Rain Effects**: Weather can dramatically change a cityscape, consider wet pavement, puddles, snow piles, etc.
+    36. **Vending Machines**: For drinks or snacks, often seen near public transit or in busy areas.
+    37. **Graffiti and Street Art**: Adds character and realism to urban environments.
+    38. **Posters and Flyers**: Stuck to lampposts, walls, or designated boards.
+    39. **Staircases**: Leading to underground areas or up to elevated areas.
+    40. **Fences and Walls**: Different designs depending on their purpose and location.
+    41. **Public Parks**: Green spaces within the city, with their own array of potential assets like playgrounds, ponds, paths, etc.
+    42. **Ticket Machines**: At bus stops, train stations, or for on-street parking.
+    43. **CCTV Cameras**: A common sight in modern urban environments.
+    44. **Utility Poles and Wires**: Telephone and power lines, often seen crisscrossing above city streets.
+    45. **Pet Stations**: Areas with waste bags and trash cans for pet owners.
+    46. **Lost and Found Items**: Adds character to the environment (e.g., a lost glove on a bench).
+    47. **Shops and Businesses**: Consider their signage, window displays, outdoor stands, etc.
+- **Debris**:
+    1. **Glass Fragments**: Glass from windows that have been shattered by the blast. This could be from small, medium, or large windows, and the fragments could be of various sizes.
+    2. **Broken Brick and Concrete**: Fragments of brick and concrete from damaged structures, ranging from small pieces to large chunks.
+    3. **Damaged Structural Elements**: Parts of buildings that have been completely demolished or badly damaged, including pillars, beams, wall sections, etc.
+    4. **Destroyed Furniture**: Pieces of furniture from inside the buildings that have been blasted out onto the street.
+    5. **Vehicle Debris**: Parts of vehicles that were near the explosion site, including tires, broken glass, fragments of metal, etc.
+    6. **Street Signs and Lights**: Street signs and traffic lights that have been knocked down or damaged by the blast.
+    7. **Personal Belongings**: Items that were being carried by people at the time of the explosion, such as bags, phones, clothing, etc.
+    8. **Scattered Paper**: Documents, newspapers, flyers, etc., that have been scattered by the blast.
+    9. **Metal Fragments**: Shrapnel from the explosion itself, as well as fragments of metal from structures and vehicles damaged by the blast.
+    10. **Dust and Ash**: Fine particles that have been thrown up into the air by the explosion, settling on the street and buildings and possibly still lingering in the air.
+    11. **Building Insulation**: Insulation material from inside the walls of damaged buildings.
+    12. **Wiring and Pipes**: Exposed and damaged wiring and pipes from inside the buildings**[1](https://unsaferguard.org/un-saferguard/blast-damage-estimation)**.
+    13. **Fire Hydrants and Water**: If a nearby fire hydrant was damaged in the explosion, it could be leaking or spraying water onto the street.
+    14. **Fallen Trees and Branches**: Trees or large branches that have been knocked over or damaged by the blast.
+    15. **Utility Poles**: Damaged or fallen utility poles, with hanging or fallen power lines.
+    16. **Rubble and Soil**: Larger chunks of rubble and soil displaced from the explosion crater.
+    17. **Street Barriers**: Police or construction barriers that have been knocked over or damaged.
+    18. **Building Interior Elements**: Parts of building interiors visible through damaged exteriors, such as wallpaper, indoor furniture, stairs, etc.
+    19. **Damaged Road Elements**: Parts of the road surface that have been cracked or displaced, including manhole covers, sewer grates, etc.
+    20. **Vehicle Fluids**: Liquids leaking from damaged vehicles, such as oil, gasoline, or windshield washer fluid.
+    21. **Emergency Services Debris**: Discarded medical supplies, fire extinguisher canisters, or other debris related to the response to the explosion.
+    22. **Food and Personal Items**: Items from nearby stores or from people present at the time of the explosion, such as shopping bags, food, drink containers, etc.
+    23. **Clothing**: Pieces of clothing scattered around from the victims of the explosion or from damaged nearby stores.
+    24. **Bus Stop Debris**: Parts of a bus stop that might be near the site of the explosion, including the bench, signage, glass panels, etc.
+    25. **Bicycle Racks and Bikes**: Damaged bicycles and racks, which are common in urban settings.
+    26. **Mailboxes**: Street mailboxes that have been damaged or knocked over.
+    27. **ATM or Vending Machine Parts**: If these were located nearby, they could have been damaged, scattering their parts or contents.
+- **Vehicles**:
+    - Emergency vehicles with flashing lights
+    - Parade vehicle models
+    - Drone model
+    1. **Fire Engines**: Depending on the scale of the disaster, there might be fire engines on the scene.
+    2. **Ambulances**: For emergency medical services, ambulances would likely be present.
+    3. **Police Cars**: In urban environments, police cars would be a common sight.
+    4. **Military Vehicles**: If the disaster is of a larger scale, military vehicles may be deployed for rescue operations.
+    5. **News Vans**: News vans from different channels covering the event.
+    6. **Motorcycles**: Personal and official (police, courier services) motorcycles.
+    7. **Delivery Trucks**: Trucks from local businesses, or delivery services like UPS, FedEx.
+    8. **Garbage Trucks**: City sanitation vehicles could add to the urban feel.
+    9. **Public Buses**: City buses, potentially abandoned or damaged.
+    10. **Personal Cars**: A variety of personal vehicles in different shapes, sizes, and conditions.
+    11. **Bicycles**: Personal bicycles, possibly attached to bike racks.
+    12. **Taxis**: Local taxis or rideshare vehicles like Uber, Lyft.
+    13. **Food Trucks**: Food trucks that were catering to the event or nearby.
+    14. **Construction Vehicles**: If there was construction nearby, you might have vehicles like cement mixers, bulldozers, or cranes.
+    15. **Street Cleaning Vehicles**: These could be included for a more detailed urban environment.
+    16. **Utility Vans**: Vehicles used by city services, such as water, electricity, or gas.
+    17. **Cargo Vans**: Vans used for transporting goods or equipment.
+    18. **Helicopters**: News or emergency medical service helicopters could be seen in the sky or landed nearby.
+    19. **Drone**: Could be seen crashed or in the air, used for news reporting or personal use.
+    20. **Car Wrecks**: Damaged or destroyed cars, potentially piled up or scattered due to the disaster.
+- **Special Effects**:
+    1. **Smoke Plumes**: From the explosion aftermath, damaged vehicles, and possibly from buildings as well.
+    2. **Fire Effects**: For burning debris, buildings, or vehicles. Could include dynamic embers and heat distortion.
+    3. **Dust Particles**: Dust kicked up from the explosion and settling debris.
+    4. **Debris Trails**: Small bits of debris being thrown into the air and falling down during the explosion.
+    5. **Light Effects**: Flashing lights from emergency vehicles, dynamic shadows, ambient occlusion, and possibly lens flare for dramatic effect.
+    6. **Blast Wave**: A shockwave effect at the moment of the explosion, causing a ripple in the environment.
+    7. **Glass Shattering**: Glass from building windows and vehicles breaking due to the explosion.
+    8. **Water Splashes**: If there's any water source in the scene, such as a fountain or puddles on the street.
+    9. **Confetti/Streamer Effects**: Could be leftovers from the parade, fluttering in the air or scattered on the ground.
+    10. **Blood Splatter Effects**: Depending on the level of realism and violence you want to depict.
+    11. **Sparks**: From damaged electric lines or vehicles.
+    12. **Paper Debris**: Papers flying out from the explosion, could be leaflets from the parade or newspapers from a newsstand.
+    13. **Cloth Physics**: Flags, banners, clothing on characters reacting to the explosion's shockwave.
+    14. **Bullet Traces**: If there's any shooting involved in the scene.
+    15. **Vehicle Damage Effects**: Smoke and fire from damaged vehicles, spark effects from short-circuiting electrical systems.
+    16. **Building Destruction Effects**: Cracks forming, debris falling, dust clouds from crumbling structures.
+    17. **Flickering Neon Signs**: If the scene is set in an area with shops or diners.
+    18. **Rain/Snow**: If the scene is set in adverse weather conditions, include precipitation effects.
+    19. **Fog/Mist**: Can add atmosphere and depth to the scene, especially in the aftermath of the explosion.
+    20. 
+    21. **Footstep Dust**: Characters or crowd walking or running could kick up dust or debris.
+    22. **Explosion Shockwave**: An initial, fast-moving shockwave that distorts the air and sends debris flying.
+    23. **Broken Electric Line Sparks**: Could be a result of the explosion or destruction, sparking and swaying.
+    24. **Birds Taking Off**: A flock of birds being startled by the explosion and flying away can add to the dynamism and realism of the scene.
+    25. **Falling Leaves**: If there are trees in the urban environment, some leaves could be shaken loose by the explosion.
+    26. **Rubble Dust**: Dust settling on surfaces after the explosion.
+    27. **Reflections**: Dynamic reflections on windows, puddles, and other reflective surfaces, particularly from the emergency vehicle lights or fires.
+    28. **Smoke Trails**: Trails of smoke from falling debris or rocketing bits of material from the explosion.
+    29. **Lens Dust/Scratches**: If you're going for a cinematic look, you could add some post-processing effects like dust or scratches on the camera lens.
+    30. **Vehicle Tire Smoke**: If the emergency vehicles are approaching fast or skidding to a halt.
+    31. **Window Light Flicker**: Lights in building windows flickering or going out due to the explosion's shockwave.
+    32. **Muzzle Flashes**: If there's any return fire in the scene, you'll need muzzle flashes and possibly bullet impacts.
+    33. **Ricochets/Sparks**: If bullets are hitting metal surfaces, sparking upon impact.
+    34. **Debris Impact Clouds**: Small dust clouds where debris lands.
+    35. **Character/Crowd Reaction Effects**: Things like quick breath visible in cold air, sweat, or even tears can add to the realism of the crowd's reaction.
+    36. **Overturned Objects Dust**: Dust from objects that have been overturned or disturbed by the explosion.
+    37. **Building Interior Lights**: These could be seen through windows, and could flicker or go out due to the shockwave.
+- **Decorations and Textures**:
+    1. **Banners and Flags**: Large colorful banners and flags displaying the theme of the parade or symbols of the city/country.
+    2. **Balloon Sculptures**: Large inflated balloon sculptures or shapes, possibly punctured or deflated after the explosion.
+    3. **Flowers and Wreaths**: Decorations made from flowers or plant materials.
+    4. **Ribbons and Streamers**: These could be found scattered around the parade route, draped over structures, or tangled in debris.
+    5. **Confetti**: Brightly colored paper or plastic confetti that was used during the parade.
+    6. **Portable Stages or Platforms**: These might have been set up for performances during the parade.
+    7. **Parade Floats**: Large, often elaborate structures that were part of the parade procession. These could range from simple platforms to intricate designs.
+    8. **Costumes and Masks**: These could be parts of costumes that were worn by parade participants, now scattered or damaged.
+    9. **Musical Instruments**: Instruments from marching bands or performers, which could be scattered around the explosion site.
+    10. **Loudspeakers and Sound Equipment**: These would have been set up along the parade route to amplify music or announcements.
+    11. **Lighting Equipment**: Decorative or functional lighting used during the parade.
+    12. **Signage**: Signs indicating the direction of the parade, safety information, or advertising from parade sponsors.
+    13. **Seating and Barriers**: Temporary chairs, benches, or barriers that were set up for parade viewers.
+    14. **Stalls or Booths**: Temporary structures set up for food vendors, information booths, or other purposes.
+    15. **Parade Memorabilia**: Items like pins, hats, or t-shirts that were being sold or given out during the parade.
+    16. **Fireworks**: Unused fireworks that were planned to be used during or after the parade.
+    17. **Thematic Decorations**: Decorations that align with the theme of the parade (e.g. cultural symbols, mascots, etc.).
+    18. **Parade Route Markers**: Signs or banners indicating the start, end, or direction of the parade route.
+    19. **First Aid Stations**: Temporary structures or areas designated for medical assistance during the event.
+    20. **Portable Toilets**: Temporary facilities for the convenience of parade-goers.
+    21. **Children's Parade Props**: Small wagons, tricycles, or strollers that might have been part of a children's parade.
+    22. **Food and Drink Vendors**: Stalls, carts, or trucks selling food and beverages, possibly tipped over or damaged.
+    23. **Security Checkpoints**: Areas designated for checking bags or screening parade-goers for safety purposes.
+    24. **Lost and Found Booth**: A station for lost and found items.
+    25. **Event Tickets or Passes**: Tickets or special passes that were used for access to certain areas of the parade.
+    26. **Photography Equipment**: Cameras or drones used to capture the event.
+    27. **Parade Schedules or Maps**: Printed or digital materials providing information about the parade.
+    28. **Transportation**: Buses, trams, or shuttles used to transport participants or attendees to the parade.
+    29. **VIP Seating Areas**: Special seating or viewing areas reserved for VIPs.
+    30. **Event Staff Identifiers**: Items like badges, vests, or hats used to identify event staff or volunteers.
+    31. **Parade Souvenirs**: Items like miniature flags, balloons, or toy replicas of parade floats sold as souvenirs.
+    32. **Public Announcements System**: Speakers or public address systems used for making announcements during the event.
+    33. **Waste Bins**: Trash and recycling bins placed around the parade area.
+    34. **Water Stations**: Points where attendees can refill water bottles or get hydration.
+    35. **Inflatable Arches**: Inflatable structures marking the start or finish line of the parade.
