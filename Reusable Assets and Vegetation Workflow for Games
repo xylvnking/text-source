@@ -10,77 +10,27 @@ During my time at Ubisoft, I have been able to work on two very distinct ends of
 
 The map I worked on, for instance, was the Abandoned Mill set in London, England. The Level Designer (Paul Dobson) and Level Artist (Denny Borges) would work together on the high-level intention of the space. Denny would begin to do an art pass of the design provided by Paul, modeling out some of the large shapes and doing a lot of the macro-composition. He would also begin to split the level into sub-maps in order to safely load and unload sections of the level to provide room for our assets to fit within memory. He would then assign sections to me and our texture artist (Jasmine Wong) to work on while he continued to work on other portions of the map.
 
-
-
-
-
-
-
-
-
-
-
-
-1 of 5
-
 Since all the other levels of the game were also doing this with their ‘cell’ teams in parallel, before we would begin to work on our areas we would first look at our asset database to see what has been made and could be reused, and what we need to build from scratch. From there, we would just build what we needed for our maps. We were mainly concerned with it fitting within the confines of our map and sub-map streaming limits and not too concerned with the global impact of the assets we were creating. Basically, if it worked on our level, it was good to go. 
 
 This was also very similar in Far Cry 4, the only difference being that now I was the one in the Level Artist seat. Although you might think of Far Cry 4 as an open-world game, in Toronto, we worked on the Shangri-La portion of the game, which was more narrative-heavy, linear missions the player would encounter. At the start of this production, I paired with another Level Artist (Jobye-Kyle Karmaker) to split a large map in half, so each had our sections to own. From there, I worked with my Level Designer (Ben Aersson) and 3D Modeller (Darren Horrocks), and we just built what we needed to complete our mandate.
 
 Our mission started with the player walking towards a waterfall that was flowing in reverse and entering a peculiar sedimentary cave to grab a time-stopping bow in front of a giant 6-armed rock statue, so almost everything we needed to build was custom. We were able to reuse some of the cave kit pieces from the open-world areas for metric guides for player navigation, but due to the thematic we were going for it all had to be re-sculpted and re-textured. Although we would regularly check the asset database to see what had been already created, we didn’t really have a great organizational structure in place for reuse across the project. This ultimately ended in a lot of assets that were made 2, 3 or even 4 times. Shrines, pillars, rock walls, you name it. There was quite a bit of unnecessary work that we did that could’ve (and should’ve) been avoided.
 
-
-
-
-
-
-
-
-1 of 3
-
 On Far Cry: Primal and Far Cry 5, things were different on the production side. We were now dealing with the challenges of building for a true open-world game, and we made it a point of trying to optimize our production efforts. Although we tried to maintain a fair amount of uniqueness in our locations, our assets had the potential of existing anywhere, so we had to build with that in mind. We set up an internal asset team (which we named the Object Bank) that would handle and organize all of our assets, cataloging and tracking every asset produced for the game. This really cut down on the amount of waste and redundancy on the environment side. Level Artists would now be creating more thorough call-out lists for what they need to complete their locations upfront. That list would then be vetted by our Object Bank team to see what already exists, what’s in production or what needs to be built from scratch. Anything that needed to be built would then be modeled out by the Level Artist before being textured and polished by the Object Bank team.
 
 To give you an example of this in practice, take a look at the images below. For this mission, called ‘Elliot Residence’, my Level Designer and I wanted to create a bit of a navigational puzzle in order to provide the player a challenge in finding a key to the hidden underground bunker which would give them an exclusive weapon and a bunch of loot. Based on the Level Design blockout by Nicolas Najm, I realized that we needed to build a 2-story cabin. We were suggested to reuse one of our existing residential bungalows, but we were pretty set on having the house be 2-story in order to maintain the feeling we were going for. I pitched the idea of creating a flexible 2-story cabin ‘kit’ that we would reuse in interesting ways at other locations as well. From there, I went about designing and modeling the kit to fit not only this location, but I tried to make it flexible enough where it could be extended and varied with the different add-on pieces. I then ended up adding some additional pieces that I needed to some of our other kits, had some decals created to add a bit of uniqueness to the cabin, repurposed and set dressed some existing assets to fully realize the space.
-
-
-
-
-
-
-1 of 2
 
 Shoutout to our Object Bank team who were responsible for the final model and texture passes. The key takeaway here is that this upfront cost of ‘measuring twice and cutting once’ wasn’t really done as diligently on our past productions. On those projects, we would have just barrelled forward, building whatever we needed for our own spaces while creating a lot of redundancy in the form of duplicate assets along the way.
 
 Working on Birch Forest
 
-
-
-
-
-
-
-
-
-1 of 4
-
 For this scene, I wanted to make something that used all the tools and techniques that we would typically use in our regular production pipeline at work. I wanted to build it using all my own personal scanned data and wanted it to also be not too far off from being within playable performance numbers if a subsequent optimization pass was done. Regarding software usage specifically, although I used pretty much the whole toolbox at one point or another, I would say the main tools I couldn’t do without in the scene were Agisoft Photoscan, SpeedTree, Substance and, of course, Unreal Engine. Other than doing my first pass placeholder meshes in SpeedTree, I relied heavily on my scanned data to move forward with my final textures and models. I waited for an ideal overcast day with minimal direct sunlight and then went to a nearby hiking trail to capture as much data as I could in a single outing. (The equipment I used here is actually from my studio! See the image below)
-
-
 
 I used different techniques for capturing mesh vs. texture data. For example, when scanning the trunk of a tree, I would do a series of photos in a full 360-degree circle around the tree. If I wanted to capture the leaves of that tree, I would place a few leaves on a black piece of bristol board and take a single high-resolution photo from a top view. When I was done scanning, I would transfer those photos onto my pc at home and run them through LightRoom for calibration. This stage at the beginning just ensures that all the photos have the correct lighting and color values, which will help out my texture work later on. Anything that was scanned as a mesh would then be sent to Photoscan for processing. This step would generate a high definition mesh and texture which I would essentially treat as a high poly object in ZBrush.
 
 From there, it’s a matter of building a low poly, unwrapping, and baking. If it was something like a tree stump or branch, it would go directly into UE4, however, if it was a tree trunk that I wanted to use as my bark texture, I would go into Substance Designer to adjust it so that it tiles properly. If what I was working on were the HD leaf images I would be using to build my cluster, I would take those into Photoshop to build an HD atlas, and generate my normal, AO and roughness maps in Substance Alchemist.
 
 Now, once I have my bark texture and my HD leaf material maps, I go into SpeedTree to build my cluster texture. In case this sounds confusing, I’ve added some images to help illustrate the typical workflow I use for creating some of these different elements. All my high poly models here are done directly in the built-in SpeedTree modeller. Typically, this HD leaf modeling step would have been done in some other modeling package (like 3Ds Max, Maya or Blender) but the more I’ve been using SpeedTree, the more I find myself cutting out some of the modeling work I would typically be doing in those other software packages.
-
-
-
-
-
-
-
-
-1 of 3
 
 Now for my scene, I had some general numbers I used as constraints from past projects, but I used those as general guides rather than hard limits. On Far Cry 5, for example, the first LOD of a tree would have an average of 10k triangles, a bush would have around 2k, and a 3m patch of grass would cost about 600 tris. Also, a tree would have a maximum of 2 materials, one for the leaves and one for the bark.
 
@@ -89,13 +39,6 @@ Even with those metrics I just mentioned, Far Cry 5 had exceptions that broke th
 Also, since I was just having fun with the project, I didn’t bother building any additional LODs, which as a rule of thumb you would try to cut the tri-count in half with each LOD you build (you would typically have about 5 LODs per tree). By the end of the project, I had some trees that ended up being a bit higher in triangle count, but the bushes and saplings came in under budget. (Just to add a caveat here, it’s higher if you are using open world budget guidelines for your vegetation, if you were making a linear game, it might not actually be that high.)
 
 So as you can see, it’s very relative to the game you’re making. On the material side, I’m using a total of 6 texture sets (birch bark, birch leaf, trunk decal, grass, flowers/weeds, and plants), so there is a good amount of reuse which is great to keep the memory count down and draw calls to a minimum. It was a bit of a push and pull in that sense. Again, I would just like to reiterate, for your portfolio work, I think that the focus should be on building a scene that looks as good as you can make it, and just make yourself aware of the general limits that exist, and when you break certain rules, make sure that it’s done intentionally and for the sake of having a better-looking portfolio piece.
-
-
-
-
-
-
-1 of 2
 
 Now for my scene, I had some general numbers I used as constraints from past projects, but I used those as general guides rather than hard limits. On Far Cry 5, for example, the first LOD of a tree would have an average of 10k triangles, a bush would have around 2k, and a 3m patch of grass would cost about 600 tris. Also, a tree would have a maximum of 2 materials, one for the leaves and one for the bark.
 
